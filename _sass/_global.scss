@@ -1,0 +1,312 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+@import "compass";
+@import "compass/css3/border-radius";
+//$base-font-size: 14px;
+//$base-line-height: 18px;
+//@include establish-baseline;
+
+$base-color: #Fe8;
+//===============================================
+// HEADER and BRANDING
+//===============================================
+.site-name  a {
+  font-family: "Didact Gothic" !important;
+  font-size: 1.59em;
+  /* color: #FFFF77; */
+  font-weight: 400;
+}
+.site-name a:hover {
+   color: #FF9900;
+}
+.site-name {
+  padding-bottom: .2em;
+}
+.site-slogan {
+  font-family: "Didact Gothic" !important;
+  /* color: #FFFFaa; */
+}
+.branding-data {
+  float: left;
+}
+.block-search {
+  float: right;
+  padding-right: 3em;
+  padding-top: 2.2em;
+  /* margin-bottom: 2em; */
+}
+.block-user-menu {
+  .block-title {
+    display: hidden;
+  }
+  .menu li {
+     list-type: none;
+  }
+}
+#zone-branding-wrapper {
+  padding-bottom: 1em;
+  height: auto; /* gradient uses the full height of the element */
+  padding: 5px; /* distance from border edge to text */
+}
+.section-header {
+  background: #fe8;
+  @include background-image(linear-gradient(color-stops(white,#Fe8 90%,yellow)));
+}
+
+//===============================================
+// MENUS and NAVIGATION
+//===============================================
+#zone-menu-wrapper {
+   margin-top: 0;
+   padding: 0;
+   z-index: 1;
+   background: #cccccc;
+   @include background-image(linear-gradient(color-stops(white, #ccc )));
+}
+.navigation a {
+   text-decoration: none;
+}
+.navigation a:hover {
+   /* color: #FF9900; */
+}
+nav.navigation  {
+   height: 25px;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+.main-menu li {
+  float: left;
+  vertical-align: top;
+  height: 100%;
+}
+.main-menu {
+  margin: 0;
+  padding: 0;
+  border:0;
+  margin-top: 0px;
+  height: 100%;
+  li.menu-385, li.menu-384, li.menu-383 {
+    vertical-align: top;
+    height: 100%;
+    float: right;
+    li.last {
+      //margin-right: 20%;
+    }
+  }
+}
+.navigation #main-menu li {
+    vertical-align: middle;
+}
+.navigation #main-menu li:hover {
+    background: #FFaa00;
+    @include background-image(linear-gradient(color-stops(#FFee88, #FF2200)));
+}
+
+// Hide Breadcrumb
+div.breadcrumb, div#breadcrumb {
+  display: none;
+}
+
+//===============================================
+// Sidebar View Blocks
+//===============================================
+
+aside#region-sidebar-second {
+
+  margin-top: 20px;
+  section.block {
+    //border: 1px #ccc solid;
+    @include border-radius(10px);
+    border-right: 1px darken(#ccc,10%) solid !important;
+    border-top: 1px darken(#ccc,10%) solid !important;
+    border-left: 5px #ccc solid !important;
+    border-bottom: 1px #ccc solid !important;
+
+
+    background: #fafafa;
+    //@include single-box-shadow(#333, 0, 3px, 3px);
+    //@include box-shadow(#000 0 3px 3px, #fff 0 1px inset);
+    h2 {
+      //$background: #d5ff88;
+      //@include background-image(linear-gradient(color-stops($background,darken($background, 20%))));
+      //background: #b388ff;
+      //background: darken($base-color, 10%);
+      padding-left: 5px;
+      border-bottom: 1px #ccc solid;
+    }
+    li.views-row {
+      margin: 0;
+      padding: 0 10px 10px 10px;
+      //border-bottom: 1px #ccc solid;
+      margin-bottom: 5px;
+    } 
+    li.views-row-first {
+      padding-top: 10px;
+    }
+    li.views-row-last {
+      border-bottom:0;
+      margin-bottom:0;
+      padding-bottom:0;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .views-field-name {
+        a {
+          color: #333;
+        }
+        font-size: 0.75em;
+    }
+  }
+}
+
+//===============================
+// Article Styling
+//===============================
+article {
+   padding-bottom: 3em;
+   margin-bottom: 3em;
+   border-bottom: 1px #ccc solid;
+   &.current {
+     border: 1px #efefef dashed;
+   }
+}
+article a {
+   text-decoration: none !important;
+   color: #333 !important;
+}
+.field-name-field-tags .field-item {
+   padding-right: .4em;
+}
+.field-name-field-tags {
+   padding-bottom: .6em;
+}
+article header h2 {
+   margin-bottom: 0em;
+}
+article img {
+   float: left;
+   margin-right: 1em;
+}
+
+article footer.submitted {
+   font-size: 0.8em;
+   color: #555;
+}
+article footer {
+   padding-bottom: 1em;
+}
+
+.section-content-wrapper {
+   padding: 1em;
+}
+
+.secondary-menu {
+   float: right;
+}
+.view-featured-articles .views-row {
+    border: 1px #eee dashed;
+    float:left;
+    margin-right: 20px;
+    width: 140px;
+}
+h1.views-field-title {
+    margin-bottom: 0;
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+}
+
+// User Picture 
+.user-picture {
+  img {
+    margin-top: 10px;
+    margin-left: -80px;
+    //@include border-radius(50%);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    float: left;
+  }
+}
+blockquote {
+  margin-left: 1em;
+  border-left: 3px #ccc solid;
+  background: #efefef;
+  padding: 1em 1em 0.2em 1em;
+  margin-bottom: 2em;
+}
+
+div#read-more {
+  @include border-radius(10px);
+  //background: #fafafa;
+  padding: 1em;
+  border-right: 1px #ccc solid;
+  border-top: 1px #ccc solid;
+  border-left: 5px #fe8 solid;
+  border-bottom: 1px #fe8 solid;
+}
+body.page_user .user-picture {
+  .content {
+    width: 60%;
+  }
+    
+  img {
+    margin-left: 0px !important;
+    float: none !important;
+    margin-right: 10px;
+  }
+}
+// Taxonomy View Styling 
+.views-field-picture img {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.views-field-name {
+  margin-bottom: 1em;
+}
+.page-taxonomy-term-4 .view-taxonomy-term {
+  .attachment-before {
+     .views-field-field-image {
+        float: left;
+        margin-right: 1em;
+     }
+  }
+}
+.view-taxonomy-term .attachment-before {
+  padding-bottom: 3em;
+  border-bottom: 1px #ccc solid;
+  margin-bottom: 3em;
+}
+
+ul li ol {
+  margin-left: 3em;
+}
+.zone-content-wrapper {
+
+    background: white;
+    margin-left:0.2em;
+    margin-right:0.2em;
+    margin-bottom:0.5em;
+}
+
+body.not-front div.content div.field-item {
+   p:first-child {
+      font-size: 115%;
+   }
+}
+
+@media only screen and (max-width: 1080px) {
+  div.user-picture {
+    display: none;
+  }
+}
