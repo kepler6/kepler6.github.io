@@ -1,8 +1,8 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
-@import "compass";
-@import "compass/css3/border-radius";
+//@import "compass";
+//@import "compass/css3/border-radius";
 //$base-font-size: 14px;
 //$base-line-height: 18px;
 //@include establish-baseline;
@@ -51,7 +51,7 @@ $base-color: #Fe8;
 }
 .section-header {
   background: #fe8;
-  @include background-image(linear-gradient(color-stops(white,#Fe8 90%,yellow)));
+  //@include background-image(linear-gradient(color-stops(white,#Fe8 90%,yellow)));
 }
 
 //===============================================
@@ -62,7 +62,7 @@ $base-color: #Fe8;
    padding: 0;
    z-index: 1;
    background: #cccccc;
-   @include background-image(linear-gradient(color-stops(white, #ccc )));
+   //@include background-image(linear-gradient(color-stops(white, #ccc )));
 }
 .navigation a {
    text-decoration: none;
@@ -101,7 +101,7 @@ nav.navigation  {
 }
 .navigation #main-menu li:hover {
     background: #FFaa00;
-    @include background-image(linear-gradient(color-stops(#FFee88, #FF2200)));
+    //@include background-image(linear-gradient(color-stops(#FFee88, #FF2200)));
 }
 
 // Hide Breadcrumb
@@ -118,7 +118,7 @@ aside#region-sidebar-second {
   margin-top: 20px;
   section.block {
     //border: 1px #ccc solid;
-    @include border-radius(10px);
+    //@include border-radius(10px);
     border-right: 1px darken(#ccc,10%) solid !important;
     border-top: 1px darken(#ccc,10%) solid !important;
     border-left: 5px #ccc solid !important;
@@ -126,7 +126,7 @@ aside#region-sidebar-second {
 
 
     background: #fafafa;
-    //@include single-box-shadow(#333, 0, 3px, 3px);
+    //@include single-box-shadow(#333, 0, 3px, 3px); /**/
     //@include box-shadow(#000 0 3px 3px, #fff 0 1px inset);
     h2 {
       //$background: #d5ff88;
@@ -247,7 +247,7 @@ blockquote {
 }
 
 div#read-more {
-  @include border-radius(10px);
+  //@include border-radius(10px);
   //background: #fafafa;
   padding: 1em;
   border-right: 1px #ccc solid;
@@ -266,27 +266,6 @@ body.page_user .user-picture {
     margin-right: 10px;
   }
 }
-// Taxonomy View Styling 
-.views-field-picture img {
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-.views-field-name {
-  margin-bottom: 1em;
-}
-.page-taxonomy-term-4 .view-taxonomy-term {
-  .attachment-before {
-     .views-field-field-image {
-        float: left;
-        margin-right: 1em;
-     }
-  }
-}
-.view-taxonomy-term .attachment-before {
-  padding-bottom: 3em;
-  border-bottom: 1px #ccc solid;
-  margin-bottom: 3em;
-}
 
 ul li ol {
   margin-left: 3em;
@@ -297,12 +276,6 @@ ul li ol {
     margin-left:0.2em;
     margin-right:0.2em;
     margin-bottom:0.5em;
-}
-
-body.not-front div.content div.field-item {
-   p:first-child {
-      font-size: 115%;
-   }
 }
 
 @media only screen and (max-width: 1080px) {
