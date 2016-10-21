@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="projects-page">
+  <h3 id="page-title">Meet the Cats</h3>
+  <div id="projects" class="list-unstyled">
+  {% for cat in site.data.cats %}
+    <div class="project well well-lg">
+      <h2>{{cat.title}}</h2>
+      <div class="project-desc">{{cat.brief-description}}</div>
+      {% if cat.image-url %}
+        <div class="project-image"><img src="{{ cat.image-url }}"></div>
+      {% endif %}
+      {% if cat.cat-url %}
+        <div>view cat: <a href="{{ cat.cat-url }}">{{ cat.title }}</a></div>
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+
+</div>

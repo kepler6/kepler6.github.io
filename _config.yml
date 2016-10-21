@@ -17,3 +17,15 @@ github_username:  kepler6
 
 # Build settings
 markdown: kramdown
+
+# oh the collections
+collections:
+  reviews:
+    output: true
+  notes:
+    output: true
+  cats:
+    output: true
+  paintings:
+    output: true
+ 
