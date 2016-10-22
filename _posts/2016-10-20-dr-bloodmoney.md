@@ -3,7 +3,7 @@ layout: post
 title:  "Review: Dr. Bloodmoney"
 date:   2016-10-20 15:24:37 +0000
 categories: reviews book
-image: 
+image: /images/posts/dr.jpg
 author: seamus
 ---
 This novel by Philip K. Dick is a bit of a change of pace for the author. The setting for the story is just before and after a Nuclear Apocalypse. There are some familiar Dickian elements: the Gnostic vision of a world ruled over by a false demiurge with a distant, helpless Deity looking on from beyond the planet. In this case the demiurge is the phocomelus Hoppy Harrington and the deity is an orbitting astronaut, the witty radio voice of Dangerfield that people all over the world tune into every night when the satellite he is stranded on is within range.
