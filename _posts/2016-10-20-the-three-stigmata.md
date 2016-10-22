@@ -3,7 +3,7 @@ layout: post
 title:  "Review: The Three Stigmata of Palmer Eldritch"
 date:   2016-10-20 15:24:37 +0000
 categories: reviews book
-image: 
+image: /images/posts/stigmata.jpg
 author: seamus
 ---
 Book 2 of my Philip K Dick 60s novels binge. I'll have to write the full review of this book later, another mind-bending story involving hallucinogens, shifting realities, religious epiphanies.
