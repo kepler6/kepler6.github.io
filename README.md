@@ -5,4 +5,4 @@ The magazine contains science fiction and game reviews and original fiction.
 Please send Pull Requests for either design or content contributions!
 
 
-The original [Kepler6](http://kepler.com/) is built with Drupal, this is a rewrite in Jekyll.
+The original [Kepler6](http://kepler6.com/) is built with Drupal, this is a rewrite in Jekyll.
