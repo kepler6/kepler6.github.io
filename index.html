@@ -4,8 +4,6 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
     {% for post in site.posts %}
     {% assign writer = site.data.people[post.author] %}
@@ -22,6 +20,12 @@ layout: default
           <img src="{{post.image}}">
           {{ post.excerpt }}
         </div>
+       </div>
+       <div class="tags">
+       tags:
+       {% for tag in post.categories %}
+         <a href="/category/{{ tag }}">{{ tag }}</a>
+       {% endfor %}
        </div>
       </li>
     {% endfor %}
