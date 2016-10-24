@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Review: Dr. Bloodmoney"
+title:  "Book Review: Dr. Bloodmoney"
 date:   2016-10-20 15:24:37 +0000
-categories: reviews book
+categories: reviews books
 image: /images/posts/dr.jpg
 author: seamus
 ---

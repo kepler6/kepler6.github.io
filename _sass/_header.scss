@@ -2,6 +2,13 @@
  * Site header
  */
 header#section-header {
+ div#zone-branding {
+   div#region-branding {
+     h6#site-slogan {
+       margin-bottom: 0.5em;
+     }
+   }
+ }
  width: 100%;
  div.zone-branding-wrapper {
    width: 940px;
