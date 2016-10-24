@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Review: The Three Stigmata of Palmer Eldritch"
+title:  "Book Review: The Three Stigmata of Palmer Eldritch"
 date:   2016-10-20 15:24:37 +0000
-categories: reviews book
+categories: reviews books
 image: /images/posts/stigmata.jpg
 author: seamus
 ---
