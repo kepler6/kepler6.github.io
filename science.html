@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="home">
+<h1>Kepler6 Science Report</h1>
+
+  <ul class="post-list">
+    {% for post in site.categories.science  %}
+    {% assign writer = site.data.people[post.author] %}
+      <li>
+       <div class="teaser">
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta"><p>Posted on {{ post.date | date: "%b %-d, %Y"}} by {{ post.author }}</p></span>
+        <div class=user-picture>
+          <img src="{{ writer.image-url }}">
+        </div>
+        <div class="teaser-content">
+          <img src="{{post.image}}">
+          {{ post.excerpt }}
+        </div>
+       </div>
+       <div class="tags">
+       tags:
+       {% for tag in post.categories %}
+         <a href="/category/{{ tag }}">{{ tag }}</a>
+       {% endfor %}
+       </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

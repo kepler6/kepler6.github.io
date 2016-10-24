@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="projects-page">
+  <h3 id="page-title">Meet the Authors</h3>
+  <div id="projects" class="list-unstyled">
+  {% for author in site.data.authors %}
+    <div class="project well well-lg">
+      <h2>{{author.title}}</h2>
+      <div class="project-desc">{{author.brief-description}}</div>
+      {% if author.image-url %}
+        <div class="project-image"><img src="{{ author.image-url }}"></div>
+      {% endif %}
+      {% if author.author-url %}
+        <div>view cat: <a href="{{ author.author-url }}">{{ author.title }}</a></div>
+      {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+
+</div>
