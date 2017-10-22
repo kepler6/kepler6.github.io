@@ -21,7 +21,6 @@ sherman:
 bart:
   title: Bart Lantz
   id: bart
-  description: Don't feed Ramblin Man
-  aliases: Ramblin Man
+  description: Bart pedals, paints and compiles his way around Denver with his 2 cats and accordionist husband.
   image-url: /images/authors/bart.jpg
 

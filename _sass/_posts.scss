@@ -33,15 +33,20 @@ div.author {
     margin-top: -85px;
   }
 }
-.author-img {
-  img {
-    border-radius: 100px;
-    width: 80px;
-    height: 80px;
-    float: left;
-    padding-right: 1em;
+.author {
+  .author-img {
+    img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      float: left;
+    }
+  }
+  .biography {
+    padding-left: 6em;
   }
 }
+
 
 .home ul.post-list li, hr {
   clear: both;
