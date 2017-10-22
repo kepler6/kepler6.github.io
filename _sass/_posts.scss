@@ -13,6 +13,10 @@
 div.tags {
   clear: both;
 }
+div.author {
+  border-top: 1px solid #9a9a9a;
+  padding-top: 1em;
+}
 .teaser, .rss-subscribe {
   padding-top: 40px;
   clear: both;
@@ -27,6 +31,15 @@ div.tags {
     float: left;
     margin-left: -95px;
     margin-top: -85px;
+  }
+}
+.author-img {
+  img {
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    float: left;
+    padding-right: 1em;
   }
 }
 

@@ -17,7 +17,8 @@ layout: default
 
 {% assign writer = site.data.people[page.author] %}
 <div class="author">
-  About the author: {{writer.title}}
+  About the author 
+  <h2>{{writer.title}}</h2>
   <div class="author-img"><img src="{{ writer.image-url }}"></div>
   <div class="biography">{{ writer.description }}</div>
 </div>
