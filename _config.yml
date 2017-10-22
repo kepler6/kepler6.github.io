@@ -8,7 +8,7 @@
 # Site settings
 title: "Kepler 6"
 subtitle: "Science Fiction Commentary"
-email: bartlantz@gmail.com
+email: kepler6mag@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Science Fiction reviews and short stories.
 baseurl: "" # the subpath of your site, e.g. /blog
