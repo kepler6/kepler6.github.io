@@ -20,9 +20,12 @@ markdown: kramdown
 
 # oh the collections
 collections:
-- reviews
-- notes
-- cats
-- paintings
-- authors
+  reviews:
+    output: true
+  cats:
+    output: true
+  category:
+    output: true
+  authors:
+    output: true
 
