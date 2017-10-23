@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1>Simple Category Pages with vanilla Jekyll</h1>
+
+{% unless page.content == '' %}
+  <p>{{ page.content }}</p>
+{% endunless %}
+
+  <p>{{ page.category }}</p>
+  <p>{{ site.categories.cyberpunk }}</p>
+{% for post in site.categories.[page.category] %}
+  <h2><a href="">{{ post.title }}</a></h2>
+  <p>{{ post.excerpt }}</p>
+{% endfor %}
+
